@@ -5,7 +5,6 @@ import Nav from "./components/Nav";
 
 
 const App = () => {
-  console.log(data)
   useEffect(() => {
 
   }, [])

@@ -1,23 +1,31 @@
 {
   "user": [
-   {
-"id": "akckskcnkac",
-"username": "hariom",
-"email": "hariomsinghtomar@gmai.ocm",
-"password": "om singh"
-}
+    {
+      "id": "akckskcnkac",
+      "username": "hariom",
+      "email": "hariomsinghtomar111@gmai.com",
+      "password": "om singh",
+      "isadmin": true
+    },
+    {
+      "id": "kTXh4s2uSZdvjHwI04pY6",
+      "username": "tomar",
+      "email": "rapalhul@ah.com",
+      "password": "tomsingh",
+      "isadmin": false
+    }
   ],
   "product": [
-  {
-  "id": "gvjgvjg",
-  "title": "string",
-  "price": 0.1,
-  "description": "string",
-  "category": "string",
-  "image": "http://example.com"
-}
+    {
+      "id": "gvjgvjg",
+      "title": "string",
+      "price": 0.1,
+      "description": "string",
+      "category": "string",
+      "image": "http://example.com"
+    }
   ],
-  "cart":[],
+  "cart": [],
   "title": {
     "name": "typicode"
   }
