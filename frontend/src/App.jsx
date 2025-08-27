@@ -1,17 +1,21 @@
 import { useEffect } from "react";
 import axios from "./api/AxiosConfig";
-import { asyncgetuser } from "./store/User_action";
+import Main_routes from "./routes/Main_routes";
+import Nav from "./components/Nav";
+
 
 const App = () => {
-
-  
+  console.log(data)
   useEffect(() => {
-    asyncgetuser()
+
   }, [])
 
 
   return (
-    <div>App</div>
+    <div>
+      <Nav/>
+      <Main_routes/>
+    </div>
   )
 }
 
