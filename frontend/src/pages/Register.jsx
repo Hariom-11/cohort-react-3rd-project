@@ -1,18 +1,27 @@
 import { nanoid } from "@reduxjs/toolkit"
-import {useForm} from "react-hook-form"
+import { useForm } from "react-hook-form"
 import { Link, useNavigate } from "react-router-dom"
 import { asyncregisteruser } from "../store/actions/User_action"
-import {useDispatch} from "react-redux"
+import { useDispatch } from "react-redux"
+
+
+
 const Register = () => {
+
+    
     const navigate = useNavigate()
     const { register, reset, handleSubmit } = useForm()
     const dispatch = useDispatch()
+
+
     const registerHandeler = (user) => {
         user.id = nanoid()
-        user.isadmin= false
+        user.isadmin = false
         dispatch(asyncregisteruser(user))
         navigate("/login")
     }
+
+
     return (
         <form onSubmit={handleSubmit(registerHandeler)} >
             <input {...register("username")} type="text" placeholder='username' />

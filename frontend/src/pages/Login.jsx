@@ -2,11 +2,15 @@
 import { nanoid } from "@reduxjs/toolkit"
 import {useForm} from "react-hook-form"
 import { Link } from "react-router-dom"
+import { asyncloginuser } from "../store/actions/User_action"
+import { useDispatch } from "react-redux"
+
 
 const Login = () => {
+     const dispatch = useDispatch()
     const { register, reset, handleSubmit } = useForm()
     const loginHandeler =(user)=>{
-        reset()
+        dispatch(asyncloginuser(user))
     }
 
     return (
