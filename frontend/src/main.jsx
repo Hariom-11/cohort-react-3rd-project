@@ -14,3 +14,7 @@ createRoot(document.getElementById('root')).render(
         </Provider>
     </BrowserRouter>
 )
+
+
+
+// npx json-server db.json -----> json server start command
