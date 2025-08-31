@@ -5,6 +5,7 @@ NavLink
 
 const Nav = () => {
     const user = useSelector((state)=>state.userReducer.user)
+    // console.log(user)
     return (
         <nav>
             <NavLink to="/">Home</NavLink>

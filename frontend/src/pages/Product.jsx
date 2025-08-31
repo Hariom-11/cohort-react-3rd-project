@@ -1,20 +1,22 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
+import { Link } from 'react-router-dom'
+
 
 const Product = () => {
   const product = useSelector((state)=> state.productReducer.product)
-  console.log(product)
 
   const rendarProduct = product.map((product)=>{
     return(
       <div key={product.id}>
-        <img src={product.image} alt="" />
+        <img className='w-[20%] object-cover'  src={product.image} alt="" />
         <h1>{product.title}</h1>
         <h4>{product.description}</h4>
         <div>
           <p>{product.price}</p>
           <button>add to cart</button>
         </div>
+        <Link to={`/product/${product.id}`}> more...</Link>
       </div>
     )
   })
